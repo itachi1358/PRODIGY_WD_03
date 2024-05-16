@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: #312956;
+
+}
+.container{
+    height: 500px;
+    width: 500px;
+    margin-left: 36%;
+    margin-top: 6%;
+}
+.tic-tac-toe{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 10px;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #312956 ;
+    font-size: 50px;
+    background-color: #786fae;
+    border-radius: 35%;
+    height: 140px;
+    width: 140px;
+    margin-top: 10%;
+    transition: all 0.4s ease;
+}
+.box:hover{
+    background-color: #312956;
+    color:  #786fae ;
+    box-shadow: 0 0 13px  #786fae;
+    transform: translateY(-6px);
+}
+.reset{
+    height: 40px;
+    width: 80px;
+    border-radius: 15%;
+    border:1px solid#786fae; 
+    background-color: #786fae;
+    color: #312956;
+    margin-left: 38%;
+    margin-top: 10%;
+    transition: all 0.2s ease;
+}
+.reset:hover{
+    color: #786fae;
+     background-color: #312956
+}
+
+.beginning{
+    height: 60px;
+    width: 120px;
+    background-color: aliceblue;
+    margin-left: 44%;
+    margin-top: 45%;
+}
+.box-disabled{
+    pointer-events:none;
+}
+.box-disabled:hover{
+    background-color: #312956;
+    color:  #786fae ;
+    box-shadow: 0 0 13px  #786fae;
+    transform: translateY(-6px);
+}
